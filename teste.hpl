@@ -22,22 +22,32 @@
   <order>
     <hop>
       <from>Text file input</from>
+      <to>Dummy (do nothing) 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Dummy (do nothing) 2</from>
       <to>Text file output</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Data grid</from>
-      <to>Text file output</to>
+      <to>Dummy (do nothing) 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>JSON input</from>
+      <to>Dummy (do nothing)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Dummy (do nothing)</from>
       <to>JSON output</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Data grid</from>
-      <to>JSON output</to>
+      <to>Dummy (do nothing)</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -78,6 +88,40 @@
     <GUI>
       <xloc>336</xloc>
       <yloc>160</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Dummy (do nothing)</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <GUI>
+      <xloc>544</xloc>
+      <yloc>256</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Dummy (do nothing) 2</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <GUI>
+      <xloc>544</xloc>
+      <yloc>80</yloc>
     </GUI>
   </transform>
   <transform>
@@ -195,7 +239,7 @@
     <transformNrInFilename>N</transformNrInFilename>
     <attributes/>
     <GUI>
-      <xloc>656</xloc>
+      <xloc>720</xloc>
       <yloc>256</yloc>
     </GUI>
   </transform>
@@ -384,7 +428,7 @@
     </fields>
     <attributes/>
     <GUI>
-      <xloc>656</xloc>
+      <xloc>720</xloc>
       <yloc>80</yloc>
     </GUI>
   </transform>
