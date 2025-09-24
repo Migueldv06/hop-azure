@@ -65,7 +65,7 @@
     <length>Characters</length>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>azure://arquivo/dados.csv</name>
+      <name>azure:\arquivo/file.txt</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -157,7 +157,7 @@
     <footer>N</footer>
     <format>DOS</format>
     <compression>None</compression>
-    <encoding/>
+    <encoding>UTF-8</encoding>
     <endedLine/>
     <fileNameInField>N</fileNameInField>
     <fileNameField/>
@@ -180,6 +180,30 @@
       <splitevery/>
     </file>
     <fields>
+      <field>
+        <name>nome</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>6</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>sobrenome</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>-1</precision>
+      </field>
     </fields>
     <attributes/>
     <GUI>
